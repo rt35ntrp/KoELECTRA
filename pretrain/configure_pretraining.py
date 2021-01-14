@@ -88,7 +88,7 @@ class PretrainingConfig(object):
         # default locations of data files
         self.pretrain_tfrecords = os.path.join(
             data_dir, "pretrain_tfrecords/pretrain_data.tfrecord*")
-        self.vocab_file = os.path.join(data_dir, "vocab.txt")
+        self.vocab_file = os.path.join(data_dir, "vocab.json")
         self.model_dir = os.path.join(data_dir, "models", model_name)
         results_dir = os.path.join(self.model_dir, "results")
         self.results_txt = os.path.join(results_dir, "unsup_results.txt")
