@@ -1,14 +1,19 @@
 {
+  "model_size": "small",
   "tpu_name": "electra-small",
   "tpu_zone": "europe-west4-a",
-  "use_tpu": true,
+  "use_tpu": false,
   "num_tpu_cores": 8,
-  "vocab_size": 32200,
+  "vocab_size": 12000,
   "num_train_steps": 375000,
   "save_checkpoints_steps": 18750,
-  "train_batch_size": 512,
+  "train_batch_size": 128,
   "learning_rate": 5e-4,
-  "max_seq_length": 512,
+  "max_seq_length": 128,
+  "model_hparam_overrides": {
+    "max_position_embeddings": 128
+  },
   "do_lower_case": false,
-  "generator_hidden_size": 1.0
+  "generator_hidden_size": 1.0,
+  "debug": false
 }
